@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-export default function App() {
+export default function CoffeeList() {
   const [data, setData] = useState("");
   const getData = async () => {
     const resp = await fetch('https://api.sampleapis.com/coffee/hot');
@@ -24,7 +24,7 @@ export default function App() {
                 src={item.image}
                 alt={item.title}
                 style={{
-                  width: '10%',
+                  width: '5%',
                   height: 'auto',
                 }}
               />
